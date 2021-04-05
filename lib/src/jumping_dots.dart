@@ -78,9 +78,9 @@ class _JumpingDotsProgressIndicatorState
   double? fontSize;
   double? dotSpacing;
   Color? color;
-  List<AnimationController> controllers = new List<AnimationController>();
-  List<Animation<double>> animations = new List<Animation<double>>();
-  List<Widget> _widgets = new List<Widget>();
+  late List<AnimationController> controllers = List<AnimationController>.from([]);
+  late List<Animation<double>> animations = List<Animation<double>>.from([]);
+  late List<Widget> _widgets = List<Widget>.from([]);
 
   _JumpingDotsProgressIndicatorState({
     this.numberOfDots,
